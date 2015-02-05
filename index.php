@@ -12,10 +12,13 @@
               confirm_query($result_set);
               $i=1;
               while($result = mysql_fetch_array($result_set)) {
-                if($i<=5) {
-                  echo "<li><a href=\"event.php?eve={$result['id']}\"><img src=\"{$result['pic_link']}\" /></a></li>";
-                }
-                $i += 1;
+								if(strlen($result['pic_link'])!=0)
+								{
+									if($i<=4) {
+										echo "<li><a href=\"event.php?eve={$result['id']}\"><img src=\"{$result['pic_link']}\" /></a></li>";
+									}
+									$i += 1;
+								}
               }
             ?>
           </ul>
@@ -35,14 +38,14 @@
                  strong leadership, promotion of the highest standards, and
                   recognition of technical excellence. ACM supports the professional
                    growth of its members by providing opportunities for life-long learning,
-                    career development, and professional networking. 
+                    career development, and professional networking.
                     <a href="aboutus.php">[Read More...]</a>
               </p><br>
         	</div>
         	<div class="event grid_4 omega">
             <?php get_upcoming_event(); ?>
         	</div>
-          <?php 
+          <?php
             if(!is_null(check_login())) {
               echo "<div class=\"event grid_4 omega\">";
               echo "<p>Please select an event to join the discussion</p>";

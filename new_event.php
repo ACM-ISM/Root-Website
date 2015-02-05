@@ -61,7 +61,7 @@
 <div class="content clearfix">
    	<div class="chapter display clearfix">
 		<form action="new_event.php" method="POST" class="bootstrap-frm" enctype="multipart/form-data">
-		    <h1>Event Form 
+		    <h1>Event Form
 		        <span>Please fill all the texts in the fields.</span>
 		    </h1>
 		    <label>
@@ -76,10 +76,10 @@
 		    	<span>Image :</span>
 		    	<input id="file" type="file" name="file" >
 		    </label>
-		    
+
 		    <label>
 		        <span>Content :</span>
-		        <textarea id="content" name="content" placeholder="<?php 
+		        <textarea id="content" name="content" placeholder="<?php
 		        	echo nl2br("<p>Your description here</p>\n");
 		        	echo "<p>Rules & Regulation</p>";
 		        	echo "<ul>";
@@ -90,32 +90,32 @@
 		        	echo "<li>your prize details here</li>";
 		        	echo "</ul>";
 		        ?>"></textarea>
-		    </label> 
+		    </label>
 		    <label>
 		        <span>Details :</span>
-		        <textarea id="details" name="details" placeholder="<?php 
+		        <textarea id="details" name="details" placeholder="<?php
 		        	echo "<h2>Schedule &Timings</h2>";
 		        	echo "<ul>";
 		        	echo "<li>Shedule it</li>";
 		        	echo "</ul>";
 		        ?>"></textarea>
-		    </label> 
+		    </label>
 		    <label>
 		        <span>Winners :</span>
-		        <textarea id="winners" name="winners" placeholder="<?php 
+		        <textarea id="winners" name="winners" placeholder="<?php
 		        	echo "<h2>Winners</h2>";
 		        	echo "<ol>";
 		        	echo "<li>Name of winners</li>";
 		        	echo "</ol>";
 		        ?>"></textarea>
-		    </label> 
+		    </label>
 		    <label>
 		        <span>Editorials :</span>
-		        <textarea id="editorials" name="editorials" placeholder="<?php 
+		        <textarea id="editorials" name="editorials" placeholder="<?php
 		        	echo "<p>Clic here to download</p>";
 		        	echo "<a href="."></a>";
 		        ?>"></textarea>
-		    </label> 
+		    </label>
 		     <label>
 		        <span>Finished :</span>
 		        <input type="radio" name="finish" value="0">No
@@ -125,11 +125,11 @@
 		        <span>Online :</span>
 		        <input type="radio" name="online" value="0">No
 		        <input type="radio" name="online" value="1">Yes
-		    </label>      
+		    </label>
 		     <label>
-		        <span>&nbsp;</span> 
-		        <input type="submit" name="submit" class="button" value="Enter into Database" /> 
-		    </label>    
+		        <span>&nbsp;</span>
+		        <input type="submit" name="submit" class="button" value="Enter into Database" />
+		    </label>
 		</form>
 	</div>
 </div>
