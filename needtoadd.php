@@ -1,3 +1,4 @@
+//Never run this script unless you want to add some users via csv file.
 <?php require_once("includes/connection.php") ?>
 <?php require_once("includes/functions.php") ?>
 <?php require_once("includes/form_functions.php") ?>
